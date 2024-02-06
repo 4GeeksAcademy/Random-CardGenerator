@@ -10,12 +10,12 @@
 .pinta-1 {
   position: absolute;
   top: -30px;
-  right: 75%;
+  right: 73%;
 }
 .pinta-2 {
   position: absolute;
   bottom: -15px;
-  left: 75%;
+  left: 73%;
   display: flex;
   transform: rotate(180deg);
 }

@@ -38,11 +38,18 @@ window.onload = function() {
     pintasRandoms();
   });
 
-  //no lo supe hacer :.(
+  //
   let card = document.querySelector("#card");
   let ancho = document.querySelector("#ancho");
-  ancho.addEventListener("input", anchos => {
+  ancho.addEventListener("change", event => {
+    console.log(event);
     ancho.innerHTML = card;
-    card.style.width = `${anchos}`;
+    card.style.width = `${event.target.value}px`;
+  });
+  let alto = document.querySelector("#alto");
+  alto.addEventListener("change", event => {
+    console.log(event);
+    alto.innerHTML = card;
+    card.style.height = `${event.target.value}px`;
   });
 };
